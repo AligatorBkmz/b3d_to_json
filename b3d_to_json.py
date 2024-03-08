@@ -19,18 +19,14 @@ if __name__ == '__main__':
         sys.exit(0)
 
     filepath = sys.argv[1]
-    output_filepath = sys.argv[2]
+    output_file = sys.argv[2]
     
     parser = B3DTree()
     converter = B3DToJsonConverter(parser)
     result = converter.convert(filepath)
+
     
-    #output_path = os.path.dirname(filepath)
-    #output_file = os.path.splitext(os.path.basename(filepath))[0]+".json"
-    #output_filepath=output_path+"/"+output_file
-    
-    
-    with open(output_filepath, "w") as json_file:
+    with open(output_file, "w") as json_file:
         json.dump(result, json_file, indent=1)
 
-    print(f"Conversion successful. Output saved to {output_filepath}")
+    print(f"Conversion successful. Output saved to {output_file}")
