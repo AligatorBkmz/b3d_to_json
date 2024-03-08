@@ -35,7 +35,7 @@ Maybe convert them into euler angles.
 
 ### JSON Converter
 * Usage: `python b3d_to_json.py [input.b3d] [output.json]`
-* Usage: `python json_to_b3d.py [input.json] [output.b3d]`
+* Usage: `python json_to_b3d.py [input.json] [output.b3d]` (WORK IN PROGRESS)
 ## License
 
 This software is covered by GPL 2.0. Pull requests are welcome.
