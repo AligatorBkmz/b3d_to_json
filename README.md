@@ -33,6 +33,9 @@ The add-on zip file should contain io_scene_b3d directory, including the directo
 * Nodes use original quaternion rotation that affects user interface.
 Maybe convert them into euler angles.
 
+### JSON Converter
+* Usage: python b3d_to_json.py [input.b3d] [output.json]
+* Usage: python json_to_b3d.py [input.json] [output.b3d]
 ## License
 
 This software is covered by GPL 2.0. Pull requests are welcome.
